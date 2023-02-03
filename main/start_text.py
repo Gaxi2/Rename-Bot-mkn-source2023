@@ -19,7 +19,7 @@ async def start_cmd(bot, msg):
 
 @Client.on_callback_query(filters.regex("start"))
 async def start(bot, msg, cb=True):   
-    txt=f"hai {msg.from_user.mention} i am simple rename bot with personal usage.\nthis bot is made by <b><a href=https://github.com/MrMKN>MrMKN</a></b>"                                     
+    txt=f"Hi {msg.from_user.mention} bro, Sorry to say I am busy cannot help you."                                     
     button= [[
         InlineKeyboardButton("Find-Hub", url="https://t.me/find_hub")
         ],[
