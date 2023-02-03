@@ -34,7 +34,7 @@ async def start(bot, msg, cb=True):
 
 @Client.on_callback_query(filters.regex("help"))
 async def help(bot, msg):
-    txt=f"just send a file and /rename <new name> with replayed your file\n\nReply a photo and send /set to set temporary thumbnail\n/view to see your thumbnail"
+    txt=f"I don't think you need help Oni'chan"
     button= [[        
         InlineKeyboardButton("🚫 Close", callback_data="del"),
         InlineKeyboardButton("⬅️ Back", callback_data="start") 
@@ -45,9 +45,9 @@ async def help(bot, msg):
 @Client.on_callback_query(filters.regex("about"))
 async def about(bot, msg):
     me=await bot.get_me()
-    Master=f"<a href=https://t.me/MrMKN_TG>MrMKN</a> & <a href=https://t.me/kwicbotupdates>me</a>"  
-    Source="<a href=https://github.com/MrMKN/Simple-Rename-Bot>Click Here</a>"
-    txt=f"<b>Bot Name: {me.mention}\nDeveloper: <a href=https://github.com/MrMKN>MrMKN</a>\nBot Updates: <a href=https://t.me/kwicbotupdates>kwicbots™</a>\nMy Master's: {Master}\nSource Code: {Source}</b>"                 
+    Master=f"I am my own Master"  
+    Origin="My origin is earth"
+    More =f"<b> NOTHING TO KNOW MORE UWU </b>"                 
     button= [[        
         InlineKeyboardButton("🚫 Close", callback_data="del"),
         InlineKeyboardButton("⬅️ Back", callback_data="start") 
